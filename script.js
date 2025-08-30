@@ -91,6 +91,16 @@ async function loadF1() {
   }
 }
 
+// Football API
+const url = "https://api.football-data.org/v4/matches";
+fetch("https://api.allorigins.win/raw?url=" + encodeURIComponent(url), {
+  headers: { "X-Auth-Token": FOOTBALL_API_KEY }
+})
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+
 loadFootball();
 loadChess();
 loadF1();
