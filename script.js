@@ -1,6 +1,6 @@
 // Sports Hub script
 // Edit this line with your API key from football-data.org
-const FOOTBALL_API_KEY = "REPLACE_WITH_YOUR_FOOTBALL_DATA_API_KEY";
+const FOOTBALL_API_KEY = "	13198cf60da542669adaff8532eb2085";
 
 function setStatus(id, text) {
   const el = document.getElementById(id);
