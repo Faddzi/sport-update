@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Sports Hub</h1>
+    <p class="tagline">Football, Chess, and F1 updates in one simple page</p>
+  </header>
+
+  <main class="container">
+    <section class="card" id="football-card">
+      <div class="card-head">
+        <h2>⚽ Football</h2>
+        <small id="football-status">Loading</small>
+      </div>
+      <ul id="football-list" class="list"></ul>
+      <div class="hint">Powered by football-data.org</div>
+    </section>
+
+    <section class="card" id="chess-card">
+      <div class="card-head">
+        <h2>♟ Chess</h2>
+        <small id="chess-status">Loading</small>
+      </div>
+      <ul id="chess-list" class="list"></ul>
+      <div class="hint">Powered by Chess.com</div>
+    </section>
+
+    <section class="card" id="f1-card">
+      <div class="card-head">
+        <h2>🏎 F1</h2>
+        <small id="f1-status">Loading</small>
+      </div>
+      <div id="f1-next" class="stack"></div>
+      <ul id="f1-list" class="list"></ul>
+      <div class="hint">Powered by Ergast Developer API</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with plain HTML, CSS, and JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
